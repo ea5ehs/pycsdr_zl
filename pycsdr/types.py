@@ -12,6 +12,7 @@ class Format(Enum):
 class AgcProfile(Enum):
     SLOW = ("Slow", 0.01, 0.0001, 600)
     FAST = ("Fast", 0.1, 0.001, 200)
+    MED  = ("Med", 0.05, 0.0005, 300)
 
     def __new__(cls, name: str, attack: float, decay: float, hangTime: int):
         obj = object.__new__(cls)
